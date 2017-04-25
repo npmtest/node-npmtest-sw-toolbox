@@ -1,6 +1,6 @@
 # npmtest-sw-toolbox
 
-#### basic test coverage for  sw-toolbox (v3.6.0)  [![npm package](https://img.shields.io/npm/v/npmtest-sw-toolbox.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sw-toolbox) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sw-toolbox.svg)](https://travis-ci.org/npmtest/node-npmtest-sw-toolbox)
+#### basic test coverage for  [sw-toolbox (v3.6.0)](https://github.com/GoogleChrome/sw-toolbox#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-sw-toolbox.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-sw-toolbox) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-sw-toolbox.svg)](https://travis-ci.org/npmtest/node-npmtest-sw-toolbox)
 
 #### Service Worker Toolbox provides some simple helpers for use in creating your own service workers.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-sw-toolbox/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-sw-toolbox/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-sw-toolbox/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-sw-toolbox/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sw-toolbox/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sw-toolbox/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-sw-toolbox/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-sw-toolbox/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-sw-toolbox/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-sw-toolbox/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-sw-toolbox/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-sw-toolbox/build/coverage.html/index.html)
 
@@ -35,21 +35,14 @@
 ```json
 
 {
-    "name": "sw-toolbox",
-    "version": "3.6.0",
-    "description": "Service Worker Toolbox provides some simple helpers for use in creating your own service workers.",
-    "license": "Apache-2.0",
-    "scripts": {
-        "build": "gulp default",
-        "test": "gulp lint default && node ./test/helpers/download-browsers.js && mocha",
-        "publish-release": "npm-publish-scripts publish-release"
+    "bugs": {
+        "url": "https://github.com/GoogleChrome/sw-toolbox/issues"
     },
-    "main": "lib/sw-toolbox.js",
-    "repository": "https://github.com/GoogleChrome/sw-toolbox",
     "dependencies": {
         "path-to-regexp": "^1.0.1",
         "serviceworker-cache-polyfill": "^4.0.0"
     },
+    "description": "Service Worker Toolbox provides some simple helpers for use in creating your own service workers.",
     "devDependencies": {
         "browserify": "^13.1.0",
         "chai": "^3.4.1",
@@ -76,13 +69,49 @@
         "vinyl-source-stream": "^1.1.0",
         "which": "^1.2.4"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "26df1d1c70348658e4dea2884319149b7b3183b5",
+        "tarball": "https://registry.npmjs.org/sw-toolbox/-/sw-toolbox-3.6.0.tgz"
+    },
     "files": [
         "lib/",
         "companion.js",
         "sw-toolbox.js",
         "sw-toolbox.js.map",
         "index.d.ts"
-    ]
+    ],
+    "gitHead": "8065b424d3992037389bb585cebc84c2e0936f66",
+    "homepage": "https://github.com/GoogleChrome/sw-toolbox#readme",
+    "license": "Apache-2.0",
+    "main": "lib/sw-toolbox.js",
+    "maintainers": [
+        {
+            "name": "addyosmani"
+        },
+        {
+            "name": "gauntface"
+        },
+        {
+            "name": "jeffposnick"
+        },
+        {
+            "name": "wibblymat"
+        }
+    ],
+    "name": "sw-toolbox",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GoogleChrome/sw-toolbox.git"
+    },
+    "scripts": {
+        "build": "gulp default",
+        "publish-release": "npm-publish-scripts publish-release",
+        "test": "gulp lint default && node ./test/helpers/download-browsers.js && mocha"
+    },
+    "version": "3.6.0",
+    "bin": {}
 }
 ```
 
